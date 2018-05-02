@@ -94,8 +94,8 @@ public class ChatListAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.chat_msg_row, parent, false);
 
             final ViewHolder holder = new ViewHolder();
-            holder.authorName = (TextView)convertView.findViewById(R.id.author);
-            holder.body = (TextView)convertView.findViewById(R.id.messageInput);
+            holder.authorName = convertView.findViewById(R.id.author);
+            holder.body = convertView.findViewById(R.id.message);
             holder.mParams = (LinearLayout.LayoutParams) holder.authorName.getLayoutParams();
             convertView.setTag(holder);
         }

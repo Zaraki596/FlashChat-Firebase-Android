@@ -128,7 +128,7 @@ public class RegisterActivity extends AppCompatActivity {
     private boolean isPasswordValid(String password) {
         //Add own logic to check for a valid password (minimum 6 characters)
         String confirmPassword = mConfirmPasswordView.getText().toString();
-        return confirmPassword.equals(password) && password.length() > 4;
+        return confirmPassword.equals(password) && password.length() > 6;
     }
 
     // Created a Firebase user
